@@ -19,20 +19,18 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@mipmap/ic_talkimg"/>
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:gravity="center"
-            android:orientation="horizontal">
-
+            android:orientation="vertical">
             <Button
                 android:id="@+id/talk_inapp_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
-                android:text="Talk in APP"
+                android:text="@string/talktxtlang"
                 tools:layout_editor_absoluteX="164dp"
                 tools:layout_editor_absoluteY="154dp" />
 
@@ -42,24 +40,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
-                android:text="تحدث داخل التطبيق"
+                android:text="@string/talktxtlangar"
                 tools:layout_editor_absoluteX="164dp"
                 tools:layout_editor_absoluteY="154dp" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:orientation="vertical">
-
             <Button
                 android:id="@+id/talk_standard_system_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
-                android:text="Talk to standard system dialog overlay"
+                android:text="@string/talktxtlangdialog"
                 tools:layout_editor_absoluteX="164dp"
                 tools:layout_editor_absoluteY="154dp" />
 
@@ -68,7 +57,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
-                android:text="تحدث من خلال منفذ النظام"
+                android:text="@string/talktextlangardialog"
                 tools:layout_editor_absoluteX="164dp"
                 tools:layout_editor_absoluteY="154dp" />
         </LinearLayout>

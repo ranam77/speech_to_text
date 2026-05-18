@@ -166,23 +166,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
         if (askForPermission()) {
             if (view == talk_inapp_btn) {
-                SpeechLanguage selectedLanguage = SpeechLanguage.ENGLISH_US;
+                SpeechLanguage selectedLanguage = SpeechLanguage.ENGLISH_GENERAL;
                 startVoiceRecognition(1, selectedLanguage);
             } else if (view == talk_ar_inapp_btn) {
-                SpeechLanguage selectedLanguage = SpeechLanguage.ARABIC_EGYPT;
+                SpeechLanguage selectedLanguage = SpeechLanguage.ARABIC_GENERAL;
                 startVoiceRecognition(1, selectedLanguage);
             } else if (view == talk_standard_system_btn) {
-                SpeechLanguage selectedLanguage = SpeechLanguage.ENGLISH_US;
+                SpeechLanguage selectedLanguage = SpeechLanguage.ENGLISH_GENERAL;
                 startVoiceRecognition(2, selectedLanguage);
             } else if (view == talk_ar_standard_system_btn) {
-                SpeechLanguage selectedLanguage = SpeechLanguage.ARABIC_EGYPT;
+                SpeechLanguage selectedLanguage = SpeechLanguage.ARABIC_GENERAL;
                 startVoiceRecognition(2, selectedLanguage);
             }
         } else {
             Toast.makeText(this, "Permission Denied Go to Settings to Grant.", Toast.LENGTH_SHORT).show();
         }
-
-
     }
 
     public enum SpeechLanguage {
