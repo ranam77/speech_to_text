@@ -135,7 +135,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 ArrayList<String> matches = bundle.getStringArrayList(SpeechRecognizer.RESULTS_RECOGNITION);
                 if (matches != null && !matches.isEmpty()) {
                     String partialText = matches.get(0);
-                    outputtxt.append(partialText);
+                    outputtxt.setText(partialText);
                 }
             }
 
